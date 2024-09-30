@@ -1,0 +1,265 @@
+:root {
+    --primary-color: #113F67;
+    --secondary-color: #226597;
+    --tertiary-color: #87C0CD;
+    --background-color: #F3F9FB;
+  }
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24;
+padding-right: 10px;
+}
+
+footer {
+    color: var(--primary-color)
+}
+
+body {
+    margin: 0px;
+    background-color: var(--background-color);
+    font-family: 'roboto', 'sans-serif';
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    object-fit: contain;
+    width: 150px;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--background-color);
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: var(--background-color);
+    opacity: 90%;
+}
+
+nav .navPages ul {
+    gap: 3rem;
+}
+
+nav div .logo {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+nav ul a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.navList a {
+    transition-duration: 0.2s;
+}
+
+.navList a:hover {
+    text-shadow: 0 2px 3px  var(--tertiary-color);
+}
+
+.navSignUp a {
+    transition-duration: 0.2s;
+}
+
+.navSignUp a:hover {
+    text-shadow: 0 2px 3px  var(--tertiary-color);
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    transition-delay: 0.1s;
+}
+
+.hamburger:hover {
+    box-shadow: 0 2px 5px 1px var(--tertiary-color);
+
+}
+
+.bar {
+    height: .2rem;
+    width: 2.5rem;
+    background-color: var(--background-color);
+    margin: 0.15rem;
+    padding-top: 0.2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+/* Contact Us */
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+
+.cardContactDiv {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: 100%;
+    box-shadow: 0 2px 10px 2px var(--secondary-color);
+    align-items: center;
+    padding: 10px;
+}
+
+.imgDivContactUs {
+    display: flex;
+    object-fit: contain;
+    width: fit-content;
+    box-shadow: 0 1px 10px 2px var(--secondary-color);
+}
+
+.contactDiv h4 {
+    display:  flex;
+    justify-content: center;
+    color: var(--background-color);
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.contactDiv {
+    padding-top: 30px;
+}
+
+.contactDetails ul li {
+    display: flex;
+    list-style: none;
+    color: var(--background-color);
+}
+
+blockquote {
+    color: red;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* footer */
+
+address {
+    font-size: 10px;
+    padding-right: 1rem;
+    font-weight: 200;
+}
+
+.footer {
+    font-weight: 200;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    margin-top: 5px;
+    color:var(--background-color);
+}
+
+.divFooter a {
+    color: var(--background-color);
+}
+
+/* media */
+
+@media (max-width: 700px) {
+
+    .cardContactDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgDivContactUs img{
+        width: 400px;
+    }
+
+    .imgDivContactUs {
+        justify-content: center;
+        box-shadow: 0 0px 0px 0px var(--secondary-color);
+
+    }
+
+    .contactDiv {
+        justify-content: center;
+        order:2;
+    }
+
+    .contactDetails ul li {
+        font-size: 12px;
+    }
+
+    .contactDiv h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navList {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 1rem;
+    }
+
+    .navList.active {
+        display: flex;
+        background-color: var(--background-color);
+        color: var(--secondary-color);
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
+
+
+
+
+
+
+
